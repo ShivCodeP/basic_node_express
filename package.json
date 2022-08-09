@@ -1,0 +1,25 @@
+{
+  "name": "basic_node_express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShivCodeP/basic_node_express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShivCodeP/basic_node_express/issues"
+  },
+  "homepage": "https://github.com/ShivCodeP/basic_node_express#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "user-agents": "^1.0.1101"
+  }
+}
