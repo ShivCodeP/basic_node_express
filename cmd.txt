@@ -1,0 +1,13 @@
+show dbs
+use eval
+db.createCollection("posts")
+db.posts.insertMany([...all json data])
+
+db.posts.updateMany({$or:[{id:{$mod:[2,0]}},{age:{$mod:[2,0]}},{family_members:{$mod:[2,0]}}]},{$set:{even_user:true}})
+
+
+db.posts.updateMany({$and:[{gender:'Male'},{age:{$mod:[2,1]}}]},{$inc:{age:-1}})
+
+db.posts.updateMany({$and:[{native:'United States'},{age:{$lte:23}}]},{$unset:{relocate_to:""}})
+
+db.posts.find({$and:[{native:'United States'},{age:{$lte:23}}]}).sort({family_members:1})
